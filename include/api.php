@@ -1,11 +1,15 @@
 <?php
+
+require_once dirname(__FILE__).'/Constants.php';
+$apiUrl = API_URL;
+
 if(isset($_POST['register']))
 {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-
-    $url = 'http://socialcodia.net/HostApi/public/createUser';
+    $endPoint = '/createUser';
+    $url = $apiUrl.$endPoint;
     $ch = curl_init($url);
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_POST,true);
@@ -23,8 +27,8 @@ if(isset($_POST['login']))
 {
     $email = $_POST['email'];
     $password = $_POST['password'];
-
-    $url = 'http://socialcodia.net/HostApi/public/login';
+    $endPoint = '/login';
+    $url = $apiUrl.$endPoint;
     $ch = curl_init($url);
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_POST,true);
@@ -52,8 +56,8 @@ if(isset($_POST['login']))
 if(isset($_POST['forgotPassword']))
 {
     $email = $_POST['email'];
-
-    $url = 'http://socialcodia.net/HostApi/public/forgotPassword';
+    $endPoint = '/forgotPassword';
+    $url = $apiUrl.$endPoint;
     $ch = curl_init($url);
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_POST,true);
@@ -77,7 +81,8 @@ if(isset($_POST['changePassword']))
     $email = $_SESSION['email'];
     $password = $_POST['password'];
     $newpassword = $_POST['newPassword'];
-    $url = 'http://socialcodia.net/HostApi/public/updatePassword';
+    $endPoint = '/updatePassword';
+    $url = $apiUrl.$endPoint;
     $ch = curl_init($url);
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_POST,true);
@@ -96,7 +101,8 @@ if(isset($_POST['resetPassword']))
     $otp = $_POST['otp'];
     $otp = str_replace(' ','',$otp);
     $newPassword = $_POST['newPassword'];
-    $url = 'http://socialcodia.net/HostApi/public/resetPassword';
+    $endPoint = '/resetPassword';
+    $url = $apiUrl.$endPoint;
     $ch = curl_init($url);
     curl_setopt($ch,CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_POST,true);
