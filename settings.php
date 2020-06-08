@@ -37,7 +37,7 @@
 
     <!-- right sidenav's profile pic dropdown -->
     <ul class="dropdown-content" id="dropdown">
-            <li><a href="include/logout.php"><i class="material-icons">logout</i>Logout</a></li>       
+            <li><a href="include/logout"><i class="material-icons">logout</i>Logout</a></li>       
     </ul>
 <?php require_once dirname(__FILE__).'/include/sidenav.php' ?>
 <?php require_once dirname(__FILE__).'/include/footer.php' ?>

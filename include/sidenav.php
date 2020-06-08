@@ -7,12 +7,12 @@
             <span class="name white-text"><?php echo $_SESSION['name']; ?></span>
             <span class="email white-text"><?php echo $_SESSION['email']; ?></span>
         </li>
-        <li><a href="dashboard.php"><i class="material-icons">dashboard</i> Dashboard</a></li>
+        <li><a href="dashboard"><i class="material-icons">dashboard</i> Dashboard</a></li>
         <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
         <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
         <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
-        <li><a href="settings.php"><i class="material-icons">settings</i> Settings</a></li>
+        <li><a href="settings"><i class="material-icons">settings</i> Settings</a></li>
         <div class="divider"></div>
-        <li><a href="include/logout.php"><i class="material-icons">logout</i>Logout</a></li>
+        <li><a href="include/logout"><i class="material-icons">logout</i>Logout</a></li>
         <li><a href=""><i class="material-icons">info</i>About Us</a></li>
     </ul>

@@ -34,7 +34,7 @@
                         <div class="input-field">
                             <input type="submit"  name="register" value="Register" class="btn" id="register" style="width: 100%; border-radius: 15px;">
                         </div>
-                        <p class="center">Already have an account?<a href="index.php" class="center"> Login</a></p>
+                        <p class="center">Already have an account?<a href="login" class="center"> Login</a></p>
                     </form>
                 </div>
             </div>

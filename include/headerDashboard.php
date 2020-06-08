@@ -26,6 +26,6 @@
 session_start();
 if(!isset($_SESSION['id']))
 {
-    header("LOCATION:index.php");
+    header("LOCATION:login");
 }
 ?>

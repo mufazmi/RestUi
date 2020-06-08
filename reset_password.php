@@ -3,7 +3,7 @@
 <?php
 if(!isset($_SESSION['resetEmail']))
 {
-    header("LOCATION:forgot_password.php");
+    header("LOCATION:forgotPassword");
 }
 ?>
 
@@ -39,7 +39,7 @@ if(!isset($_SESSION['resetEmail']))
                         <div class="input-field">
                             <input type="submit"  name="resetPassword" value="Reset Password" class="btn" id="resetPassword" style="width: 100%; border-radius: 15px;">
                         </div>
-                        <p class="center">Back to<a href="index.php" class="center"> Login</a></p>
+                        <p class="center">Back to<a href="login" class="center"> Login</a></p>
                     </form>
                 </div>
             </div>

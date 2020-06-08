@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^login?$ index.php
+RewriteRule ^register?$ register.php
+RewriteRule ^dashboard?$ dashboard.php
+RewriteRule ^forgotPassword?$ forgot_password.php
+RewriteRule ^resetPassword?$ reset_password.php
+RewriteRule ^settings?$ settings.php
+RewriteRule ^logout?$ include/logout.php

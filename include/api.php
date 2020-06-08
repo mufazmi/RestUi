@@ -49,7 +49,7 @@ if(isset($_POST['login']))
         $_SESSION['name'] = $name;
         $_SESSION['email'] = $email;
         $_SESSION['id'] = $id;
-        header("LOCATION:dashboard.php");
+        header("LOCATION:dashboard");
     }
 }
 
@@ -72,7 +72,7 @@ if(isset($_POST['forgotPassword']))
     if($error==false)
     {
         $_SESSION['resetEmail'] = $email;
-        header("LOCATION:reset_password.php");
+        header("LOCATION:resetPassword");
     }
 }
 

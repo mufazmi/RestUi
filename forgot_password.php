@@ -23,7 +23,7 @@
                         <div class="input-field">
                             <input type="submit"  name="forgotPassword" value="Forgot Password" class="btn" id="forgotPassword" style="width: 100%; border-radius: 15px;">
                         </div>
-                        <p class="center">Back to<a href="index.php" class="center"> Login</a></p>
+                        <p class="center">Back to<a href="login" class="center"> Login</a></p>
                     </form>
                 </div>
             </div>

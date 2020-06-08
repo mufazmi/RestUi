@@ -24,12 +24,12 @@
                             <i class="material-icons prefix">lock</i>
                             <input type="password" value="farooqui" name="password" id="password">
                             <label for="password">Password</label>
-                        <p class="right" style="margin-bottom:13px"><a href="forgot_password.php" class="center"> Forgot Password?</a></p>
+                        <p class="right" style="margin-bottom:13px"><a href="forgotPassword" class="center"> Forgot Password?</a></p>
                         </div>
                         <div class="input-field">
                             <input type="submit"  name="login" value="Login" class="btn" id="login" style="width: 100%; border-radius: 15px;">
                         </div>
-                        <p class="center">Don't have an account?<a href="register.php" class="center"> Register</a></p>
+                        <p class="center">Don't have an account?<a href="register" class="center"> Register</a></p>
                     </form>
                 </div>
             </div>
