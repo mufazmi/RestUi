@@ -13,6 +13,6 @@
         <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
         <li><a href="settings"><i class="material-icons">settings</i> Settings</a></li>
         <div class="divider"></div>
-        <li><a href="include/logout"><i class="material-icons">logout</i>Logout</a></li>
+        <li><a href="logout"><i class="material-icons">logout</i>Logout</a></li>
         <li><a href=""><i class="material-icons">info</i>About Us</a></li>
     </ul>
