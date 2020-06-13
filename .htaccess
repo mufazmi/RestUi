@@ -1,5 +1,6 @@
 RewriteEngine On
 RewriteRule ^login?$ index.php
+RewriteRule ^users?$ users.php
 RewriteRule ^register?$ register.php
 RewriteRule ^dashboard?$ dashboard.php
 RewriteRule ^forgotPassword?$ forgot_password.php

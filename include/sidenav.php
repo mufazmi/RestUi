@@ -8,7 +8,7 @@
             <span class="email white-text"><?php echo $_SESSION['email']; ?></span>
         </li>
         <li><a href="dashboard"><i class="material-icons">dashboard</i> Dashboard</a></li>
-        <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
+        <li><a href="users"><i class="material-icons">group</i> Users</a></li>
         <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
         <li><a href=""><i class="material-icons">dashboard</i> Dashboard</a></li>
         <li><a href="settings"><i class="material-icons">settings</i> Settings</a></li>

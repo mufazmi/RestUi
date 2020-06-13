@@ -46,12 +46,15 @@ if(isset($_POST['login']))
         $name = $user->name;
         $email = $user->email;
         $id = $user->id;
+        $token = $user->token;
+        setcookie("token",$token);
         $_SESSION['name'] = $name;
         $_SESSION['email'] = $email;
         $_SESSION['id'] = $id;
         header("LOCATION:dashboard");
     }
 }
+
 
 if(isset($_POST['forgotPassword']))
 {
@@ -78,6 +81,11 @@ if(isset($_POST['forgotPassword']))
 
 if(isset($_POST['changePassword']))
 {
+    if (is_string($_COOKIE['token'])) 
+    {
+        $token = $_COOKIE['token'];
+    }
+    $header[] = "token: $token";
     $email = $_SESSION['email'];
     $password = $_POST['password'];
     $newpassword = $_POST['newPassword'];
@@ -85,6 +93,7 @@ if(isset($_POST['changePassword']))
     $url = $apiUrl.$endPoint;
     $ch = curl_init($url);
     curl_setopt($ch,CURLOPT_URL,$url);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
     curl_setopt($ch,CURLOPT_POST,true);
     curl_setopt($ch,CURLOPT_POSTFIELDS,"email=$email&password=$password&newpassword=$newpassword");
     curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
